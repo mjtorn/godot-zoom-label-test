@@ -9,6 +9,7 @@ a constant.
 
 ## LIVE DEMO!1
 
-[Demo](export/ZoomLabelTest.html)
-
+[Demo](export/ZoomLabelTest.html) - Actually doesn't
+work in Github; you have to download this and run it
+locally on your browser.
 
