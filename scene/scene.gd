@@ -11,14 +11,20 @@ func input(viewport, event, shape_idx):
 		if event.button_index == 5:
 			# zoom out
 			camera.zoom *= 1.2
-			anchor.global_position *= 1.2
+			# anchor.global_position *= 1.2
+			$"../dialog_layer".transform.origin = get_viewport().canvas_transform.get_origin()
 			printt("\tAfter zoom out:", anchor.global_position, anchor.position)
+			printt("\tViewport canvas origin:", get_viewport().canvas_transform.get_origin())
+			printt("\tdialog_layer canvas origin:", $"../dialog_layer".transform.origin)
 			printt("-")
 		elif event.button_index == 4:
 			# zoom in
 			camera.zoom *= 0.833
-			anchor.global_position *= 0.833
+			# anchor.global_position *= 0.833
+			$"../dialog_layer".transform.origin = get_viewport().canvas_transform.get_origin()
 			printt("\tAfter zoom in:", anchor.global_position, anchor.position)
+			printt("\tViewport canvas origin:", get_viewport().canvas_transform.get_origin())
+			printt("\tdialog_layer canvas origin:", $"../dialog_layer".transform.origin)
 			printt("-")
 
 func _enter_tree():
