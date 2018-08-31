@@ -43,7 +43,11 @@ centered = false
 script = ExtResource( 2 )
 _sections_unfolded = [ "Offset" ]
 
-[node name="dialog_layer" type="CanvasLayer" parent="." index="1"]
+[node name="dialog_pos" type="Position2D" parent="." index="1"]
+
+position = Vector2( 594.335, 594.189 )
+
+[node name="dialog_layer" type="CanvasLayer" parent="." index="2"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -53,7 +57,7 @@ transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="anchor_for_moving" type="Node2D" parent="dialog_layer" index="0"]
 
-position = Vector2( 625.874, 625.825 )
+position = Vector2( 595.403, 598.58 )
 
 [node name="dialog" type="RichTextLabel" parent="dialog_layer/anchor_for_moving" index="0"]
 
@@ -61,10 +65,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -31.0
-margin_top = -31.0
-margin_right = 593.0
-margin_bottom = 146.0
+margin_left = -1.0
+margin_top = -4.0
+margin_right = 623.0
+margin_bottom = 173.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 mouse_filter = 0
@@ -87,7 +91,7 @@ selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "custom_colors", "custom_fonts", "custom_styles" ]
 
-[node name="camera" type="Camera2D" parent="." index="2"]
+[node name="camera" type="Camera2D" parent="." index="3"]
 
 position = Vector2( 960, 540 )
 anchor_mode = 1
